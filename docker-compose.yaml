@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+
+  portfolio-db:
+    image: postgres:15.3
+    container_name: portfolio-db
+    ports:
+      - '5434:5432'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=mypass123
+      - POSTGRES_DB=portfolio
+    volumes:
+      - portfolio-db:/var/lib/postgresql/data
+
+volumes:
+  portfolio-db:
