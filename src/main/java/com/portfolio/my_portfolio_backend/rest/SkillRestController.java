@@ -11,7 +11,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/skill")
 @RequiredArgsConstructor
-public class SkillController {
+public class SkillRestController {
     private final ISkillService skillService;
 
     @GetMapping

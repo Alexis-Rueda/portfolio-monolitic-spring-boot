@@ -12,11 +12,11 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/test-personal-info")
-public class PersonalInfoController {
+public class PersonalInfoRestController {
 
     private final IPersonalInfoService personalInfoService;
 
-    public PersonalInfoController(IPersonalInfoService personalInfoService) {
+    public PersonalInfoRestController(IPersonalInfoService personalInfoService) {
         this.personalInfoService = personalInfoService;
     }
 
